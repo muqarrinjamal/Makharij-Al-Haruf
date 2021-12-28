@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Makharijalharuf">
         <activity
+            android:name=".ActivityTest"
+            android:exported="true" />
+        <activity
             android:name=".about"
             android:exported="true" />
         <activity
