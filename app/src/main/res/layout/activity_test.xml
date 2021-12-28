@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <TextView
+        android:id="@+id/textViewLetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Press Next to start"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonNiteeyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nit-eeyah"
+        android:onClick="onClickNiteeyah"
+        app:layout_constraintStart_toStartOf="@+id/buttonTarfiyah"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTarfiyah" />
+
+    <Button
+        android:id="@+id/buttonHalqiyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Halqiyah"
+        android:onClick="onClickHalqiyah"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLetter" />
+
+    <Button
+        android:id="@+id/buttonLisaveyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Lisaveyah"
+        android:onClick="onClickLisaveyah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLetter" />
+
+    <Button
+        android:id="@+id/buttonGhunna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ghunna"
+        android:onClick="onClickGhunna"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLisaveyah"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLisaveyah" />
+
+    <Button
+        android:id="@+id/buttonLahatiyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Lahatiyah"
+        android:onClick="onClickLahatiyah"
+        app:layout_constraintStart_toStartOf="@+id/buttonHalqiyah"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHalqiyah" />
+
+    <Button
+        android:id="@+id/buttonTarfiyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Tarfiyah"
+        android:onClick="onClickTarfiyah"
+        app:layout_constraintStart_toStartOf="@+id/buttonLahatiyah"
+        app:layout_constraintTop_toBottomOf="@+id/buttonLahatiyah" />
+
+    <Button
+        android:id="@+id/buttonShafaweeyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Shafaweeyah"
+        android:onClick="onClickShafaweeyah"
+        app:layout_constraintEnd_toEndOf="@+id/buttonGhunna"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGhunna" />
+
+    <Button
+        android:id="@+id/buttonThalqeeyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Thalqeeyah"
+        android:onClick="onClickThalqeeyah"
+        app:layout_constraintEnd_toEndOf="@+id/buttonShafaweeyah"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShafaweeyah" />
+
+    <Button
+        android:id="@+id/buttonAsleeyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Asleeyah"
+        android:onClick="onClickAsleeyah"
+        app:layout_constraintStart_toStartOf="@+id/buttonNiteeyah"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNiteeyah" />
+
+    <Button
+        android:id="@+id/buttonShajariyahHaafiyah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Shajariyah Haafiyah"
+        android:onClick="onClickShajariyahHaafiyah"
+        app:layout_constraintEnd_toEndOf="@+id/buttonThalqeeyah"
+        app:layout_constraintTop_toBottomOf="@+id/buttonThalqeeyah" />
+
+    <TextView
+        android:id="@+id/textViewAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Answer"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonShajariyahHaafiyah" />
+
+    <TextView
+        android:id="@+id/textViewScoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Score: "
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAnswer" />
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewScoreTitle"
+        app:layout_constraintStart_toEndOf="@+id/textViewScoreTitle" />
+
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="50dp"
+        android:text="Next"
+        android:onClick="onClickNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="50dp"
+        android:text="Finish"
+        android:onClick="onClickFinish"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
